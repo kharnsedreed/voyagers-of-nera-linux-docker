@@ -18,7 +18,9 @@ The following instructions are for building then running the image
 6. Modify these files per - https://treehousegames.notion.site/How-to-Host-Dedicated-Servers-1debc50b8edb803b9d5bd4dbfdb32c2c#271bc50b8edb8066b288ef74349c2545
 7. Start server again `docker compose up -d` 
 
-## update
+## Update
+Trying to create an easier way to update but for now:
+
 1. Stop the server if its running `docker compose down`
 2. Remove the `./dedicated-server` directory in your local machine
 3. Start the server again `docker compose up -d`
