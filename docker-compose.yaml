@@ -1,6 +1,6 @@
 services:
   voyagers-of-nera:
-    image: "voyagersofnera:latest"
+    image: "ghcr.io/kharnsedreed/voyagers-of-nera-linux-docker:latest"
     restart: unless-stopped
     volumes:
       - "./dedicated-server:/dedicated-server"
