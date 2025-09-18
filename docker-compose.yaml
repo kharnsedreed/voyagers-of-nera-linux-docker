@@ -1,0 +1,13 @@
+services:
+  voyagers-of-nera:
+    image: "voyagersofnera:latest"
+    restart: unless-stopped
+    volumes:
+      - "./dedicated-server:/dedicated-server"
+      - "./saved:/server/BoatGame/Saved"
+      - "./config:/server/BoatGame/Saved/PersistedData/CustomConfig"
+    environment:
+      - AUTO_UPDATE=true
+    ports:
+      - "0.0.0.0:7777:7777/udp"
+      - "0.0.0.0:27015:27015/udp"
