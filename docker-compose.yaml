@@ -4,8 +4,8 @@ services:
     restart: unless-stopped
     volumes:
       - "./dedicated-server:/dedicated-server"
-      - "./saved:/server/BoatGame/Saved"
-      - "./config:/server/BoatGame/Saved/PersistedData/CustomConfig"
+      - "./saved:/dedicated-server/BoatGame/Saved"
+      - "./config:/dedicated-server/BoatGame/Saved/PersistedData/CustomConfig"
     environment:
       - AUTO_UPDATE=true
     ports:
